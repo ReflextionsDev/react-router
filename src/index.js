@@ -17,7 +17,7 @@ render(
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />}>
           <Route index element ={<Form />}/>
-          <Route path="form/(:id)" element ={<Form />}/>
+          {/* <Route path="form" element ={<Form />}/> */}
           <Route path="submitted" element={<Submitted/>}/>
         </Route>
         <Route path="*" element={<NotFound />} />
